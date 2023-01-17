@@ -11,10 +11,10 @@ function NavBar() {
                     <NBHeaderButton>GEAR HEADZ</NBHeaderButton>
                 </NavLink>
                 <NavLink to="/reviews">
-                    <Button>reviews</Button>
+                    <Button>Reviews!</Button>
                 </NavLink>
-                <NavLink to="/about">
-                    <Button>about</Button>
+                <NavLink to="/submit">
+                    <Button>Submit a Review!</Button>
                 </NavLink>
             </NavBarDiv>
         </div>

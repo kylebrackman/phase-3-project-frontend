@@ -17,12 +17,17 @@ function App() {
       })
   }, [])
 
+  function onReviewDelete(id) {
+    const updatedReviews = reviews.filter(review => review.id !== id)
+    setReviews(updatedReviews);
+  }
+
 
   return (
     <div >
       <NavBar />
       <Routes>
-          <Route path="/reviews" element={<Reviews reviews={reviews}/>} />
+          <Route path="/reviews" element={<Reviews reviews={reviews} onReviewDelete={onReviewDelete} />} />
       </Routes>
     </div>
   );

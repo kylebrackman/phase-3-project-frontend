@@ -1,8 +1,15 @@
 import React from "react";
-import { RevDiv } from "../StyledComponents"
+import { RevDiv, EditButton, DeleteButton } from "../StyledComponents"
 
 
-function Reviews({ reviews }) {
+function Reviews({ reviews, onReviewDelete }) {
+
+    function handleDeleteClick(id) {
+        fetch(`http://localhost:3000/reviews/${id}`, {
+            method: "DELETE",
+        })
+        .then(() => onReviewDelete(id))
+    }
 
     const reviewList = reviews.map(review => {
         return (
@@ -16,6 +23,8 @@ function Reviews({ reviews }) {
                 <div>
                     {review.item_rating}
                 </div>
+                <EditButton>Edit</EditButton>
+                <DeleteButton onClick={() => handleDeleteClick(review.id)}>🗑</DeleteButton>
             </RevDiv>
         )
     })

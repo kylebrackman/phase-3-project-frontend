@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Button = styled.button`
 width: 150px;
-height: 40px;
+height: 80px;
 background-color: #7d3cff;
 color: white;
 font-weight: 900;
@@ -46,4 +46,29 @@ font-family: "futura";
 font-size: 20px;
 text-align: center;
 justify-content: center;
+`
+
+export const EditButton = styled.button`
+width: 75px;
+height: 30px;
+background-color: #f2d53c;
+color: white;
+font-weight: 900;
+font-family: "futura";
+font-size: 15px;
+margin: 1.5em;
+border-radius: 6px;
+border: 2px;
+`
+export const DeleteButton = styled.button`
+width: 75px;
+height: 30px;
+background-color: #f2d53c;
+color: white;
+font-weight: 900;
+font-family: "futura";
+font-size: 15px;
+margin: 1.5em;
+border-radius: 6px;
+border: 2px;
 `
