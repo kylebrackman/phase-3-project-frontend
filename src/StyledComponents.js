@@ -32,7 +32,7 @@ border: 2px;
 margin-top: 10px;
 `
 export const RevDiv = styled.div`
-height: 350px;
+height: 200px;
 width: 350px;
 background-color: gray;
 margin-bottom: 50px;
@@ -45,5 +45,5 @@ font-weight: 900;
 font-family: "futura";
 font-size: 20px;
 text-align: center;
+justify-content: center;
 `
-

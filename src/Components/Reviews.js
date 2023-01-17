@@ -6,11 +6,17 @@ function Reviews({ reviews }) {
 
     const reviewList = reviews.map(review => {
         return (
-            <div>
-                <RevDiv>
-                    {review.item_name} 
-                </RevDiv>
-            </div>
+            <RevDiv>
+                <div>
+                    {review.item_name}
+                </div>
+                <div>
+                    {review.item_review}
+                </div>
+                <div>
+                    {review.item_rating}
+                </div>
+            </RevDiv>
         )
     })
 
@@ -18,7 +24,6 @@ function Reviews({ reviews }) {
         <div>
             {reviewList}
         </div>
-
     )
 }
 export default Reviews
