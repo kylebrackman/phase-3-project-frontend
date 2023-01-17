@@ -72,3 +72,25 @@ margin: 1.5em;
 border-radius: 6px;
 border: 2px;
 `
+export const MainDiv = styled.div`
+justify-content: center;
+align-items: center;
+display: flex;
+`
+
+export const SubsDiv = styled.div`
+height: 500px;
+width: 700px;
+background-color: gray;
+margin-bottom: 50px;
+margin-right: 50px;
+border-radius: 6px;
+padding-top: 10px;
+float: left;
+color: white;
+font-weight: 900;
+font-family: "futura";
+font-size: 40px;
+text-align: center;
+justify-content: center;
+`
