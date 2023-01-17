@@ -13,7 +13,7 @@ function NavBar() {
                 <NavLink to="/reviews">
                     <Button>Reviews!</Button>
                 </NavLink>
-                <NavLink to="/submit">
+                <NavLink to="/submissions">
                     <Button>Submit a Review!</Button>
                 </NavLink>
             </NavBarDiv>

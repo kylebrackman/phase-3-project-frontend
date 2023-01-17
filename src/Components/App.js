@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from "./NavBar"
 import Reviews from "./Reviews"
+import Submissions from './Submissions';
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
@@ -28,6 +29,7 @@ function App() {
       <NavBar />
       <Routes>
           <Route path="/reviews" element={<Reviews reviews={reviews} onReviewDelete={onReviewDelete} />} />
+          <Route path="/submissions" element={<Submissions/>} />
       </Routes>
     </div>
   );
