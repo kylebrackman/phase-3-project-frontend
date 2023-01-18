@@ -1,4 +1,5 @@
 import React from "react";
+import NewUser from "./NewUser";
 import { MainDiv, SubsDiv } from "../StyledComponents"
 
 
