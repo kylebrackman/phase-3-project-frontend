@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from "./NavBar"
 import Reviews from "./Reviews"
 import Submissions from './Submissions';
+import Home from './Home'
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
@@ -30,6 +31,7 @@ function App() {
       <Routes>
           <Route path="/reviews" element={<Reviews reviews={reviews} onReviewDelete={onReviewDelete} />} />
           <Route path="/submissions" element={<Submissions/>} />
+          <Route path="/home" element={<Home/>} />
       </Routes>
     </div>
   );

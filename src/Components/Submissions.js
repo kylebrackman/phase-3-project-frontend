@@ -8,6 +8,10 @@ function Submissions() {
     return (
         <MainDiv>
             <SubsDiv>
+                Enter A Username to Submit a Review!
+                <NewUser/>
+            </SubsDiv>
+            <SubsDiv>
                 Submit a Review!
                 <div>
                     <div style={{fontSize: 25}}>

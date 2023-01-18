@@ -76,6 +76,7 @@ export const MainDiv = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
+margin: 70px
 `
 
 export const SubsDiv = styled.div`
