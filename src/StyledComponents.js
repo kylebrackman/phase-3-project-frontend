@@ -76,7 +76,7 @@ export const MainDiv = styled.div`
 justify-content: center;
 align-items: center;
 display: flex;
-margin: 70px
+margin: 70px;
 `
 
 export const SubsDiv = styled.div`
@@ -94,4 +94,9 @@ font-family: "futura";
 font-size: 40px;
 text-align: center;
 justify-content: center;
+`
+export const UserNameText = styled.textarea`
+font-size: 30px;
+height: 50px;
+width: auto;
 `

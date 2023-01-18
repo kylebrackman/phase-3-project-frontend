@@ -1,9 +1,10 @@
 import React from "react";
+import { UserNameText } from "../StyledComponents"
 
-function NewUser() {
+function NewUser( { setUserName }) {
     return (
             <div>
-                <input></input>
+                <UserNameText></UserNameText>
             </div>
     )
 }

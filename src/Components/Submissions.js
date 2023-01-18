@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import NewUser from "./NewUser";
 import { MainDiv, SubsDiv } from "../StyledComponents"
 
 
 function Submissions() {
-// add conditonal rendering, must create user or username to see submission field
-    return (
-        <MainDiv>
-            <SubsDiv>
-                Enter A Username to Submit a Review!
-                <NewUser/>
-            </SubsDiv>
+    const [userName, setUserName] = useState(null)
+
+    if (userName === null) {
+        return (
+            <MainDiv>
+                <SubsDiv>
+                    Enter A Username to Submit a Review!
+                    <NewUser setUserName={setUserName}/>
+                </SubsDiv>
+            </MainDiv>
+        );
+    }
+    else {
+        return (
             <SubsDiv>
                 Submit a Review!
                 <div>
-                    <div style={{fontSize: 25}}>
+                    <div style={{ fontSize: 25 }}>
                         Item Name
                     </div>
                     <textarea></textarea>
                 </div>
                 <div>
-                    <div style={{fontSize: 25}}>
+                    <div style={{ fontSize: 25 }}>
                         Item Review
                     </div>
                     <textarea></textarea>
                 </div>
                 <div>
-                    <div style={{fontSize: 25}}>
+                    <div style={{ fontSize: 25 }}>
                         Item Rating
                     </div>
                     <select>
@@ -42,11 +49,9 @@ function Submissions() {
                         <option>9</option>
                         <option>10</option>
                     </select>
-                    <p>Thanks Name!</p>
                 </div>
             </SubsDiv>
-        </MainDiv>
-    )
+        )
+    }
 }
-
 export default Submissions
